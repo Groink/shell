@@ -1,5 +1,4 @@
 # February 20, 2018
-# Tanium, Inc
 #
 # This script git clones the Tanium git repo using the GitHub API.
 # Then keeps $count number of differential backups and then at the end
@@ -7,7 +6,7 @@
 
 #!/bin/bash
 
-# Varibles
+# Variables
 
 git_source=/mnt/git_backups/tmp
 working_dir=/mnt/git_backups
