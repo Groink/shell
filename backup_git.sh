@@ -19,8 +19,8 @@ pruned_count=$((max_count+1))
 cd $git_source
 
 # Clone current GitHub repo to ./tmp
-curl "https://api.github.com/users/tanium/repos?page=1&per_page=100" | grep -e 'git_url*' | cut -d \" -f 4 | xargs -L1 git clone
-git clone https://davidhunterchowdah:818777b33314b2ed8111bef0c7d13145763ec512@github.com/tanium/it-ansible.git
+curl "https://api.github.com/users/[user]/repos?page=1&per_page=100" | grep -e 'git_url*' | cut -d \" -f 4 | xargs -L1 git clone
+git clone https://davidhunterchowdah:[token]@github.com/
 
 # Check for first time run
 for i in $(seq 0 $max_count) ; do
